@@ -2,7 +2,8 @@ import { Routes, Route, Link, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Recommendations from "./pages/Recommendations";
 import Compare from "./pages/Compare";
-import Analytics from "./pages/Analytics";
+// import Analytics from "./pages/Analytics";
+import Analytics from "./components/Analytics.jsx";
 import Header from "./components/Header";
 import "./index.css"; // import the CSS we added
 import Footer from "../src/components/Footers.jsx";
