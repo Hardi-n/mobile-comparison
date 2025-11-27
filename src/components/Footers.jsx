@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   return (
     <footer className="site-footer">
@@ -8,11 +10,13 @@ const Footer = () => {
           <div className="footer-section footer-brand">
             <div className="footer-logo">
               <div className="footer-logo-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M9 6H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M9 10H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M9 14H12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="5" y="2" width="14" height="20" rx="2"
+                    stroke="currentColor" strokeWidth="2" />
+                  <path d="M9 6H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                  <path d="M9 10H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                  <path d="M9 14H12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </div>
               <span className="footer-logo-text">SmartChoice</span>
@@ -26,9 +30,9 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-heading">Quick Links</h3>
             <ul className="footer-links">
-              <li><a href="#recommendations">Get Recommendations</a></li>
-              <li><a href="#compare">Compare Devices</a></li>
-              <li><a href="#analytics">Analytics Dashboard</a></li>
+              <li><Link to="/recommendations">Get Recommendations</Link></li>
+              <li><Link to="/compare">Compare Devices</Link></li>
+              <li><Link to="/analytics">Analytics Dashboard</Link></li>
             </ul>
           </div>
 

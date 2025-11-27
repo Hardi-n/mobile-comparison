@@ -135,11 +135,11 @@ body {
 }
 
 /* small container utilities used by pages */
-.container {
+/* .container {
   /* max-width: 1180px;
   margin: 28px auto;
   padding: 0 18px; */
-}
+/* } */ */
 
 /* phone card baseline (home) */
 .phone-card {
@@ -161,7 +161,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 13rem;
+  gap: 5rem;
 }
 
 .nav-link {
@@ -426,4 +426,269 @@ body {
   .insight-card {
     text-align: center;
   }
+}
+.about-container {
+/* margin-bottom: 10px; */
+margin: 3rem 4rem;
+}
+
+
+.authors-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 12px;
+}
+
+
+.author-box {
+padding: 12px;
+border-radius: 12px;
+border: 1px solid #ddd;
+background: #fafafa;
+}
+
+
+.author-label {
+font-size: 12px;
+opacity: 0.7;
+}
+
+
+.author-name {
+margin-top: 4px;
+font-weight: 600;
+font-size: 15px;
+}
+
+
+.order-note {
+margin-top: 20px;
+font-size: 14px;
+opacity: 0.85;
+}
+
+
+/* Footer */
+.footer-section {
+margin-top: 20px;
+border-top: 1px solid #ddd;
+padding-top: 10px;
+font-size: 14px;
+}
+
+
+/* Buttons */
+.nav-buttons {
+margin-top: 20px;
+display: flex;
+gap: 10px;
+}
+
+
+.btn-primary {
+background: #4f46e5;
+color: white;
+padding: 8px 16px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: 500;
+}
+
+
+.btn-outline {
+border: 1px solid #ccc;
+padding: 8px 16px;
+border-radius: 8px;
+text-decoration: none;
+color: black;
+}
+
+.phones-container {
+max-width: 700px;
+margin: 0 auto;
+padding: 20px;
+}
+
+
+.phones-title {
+font-size: 28px;
+font-weight: bold;
+text-align: center;
+margin-bottom: 20px;
+}
+
+
+.search-bar {
+width: 100%;
+padding: 10px;
+font-size: 16px;
+margin-bottom: 20px;
+border-radius: 8px;
+border: 1px solid #ccc;
+}
+
+
+.phones-list {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+
+.phone-item {
+padding: 15px;
+border: 1px solid #ddd;
+border-radius: 10px;
+margin-bottom: 12px;
+background: #fafafa;
+}
+
+
+.phone-name {
+font-size: 18px;
+font-weight: 600;
+}
+
+
+.phone-brand,
+.phone-score {
+font-size: 14px;
+opacity: 0.8;
+}
+
+
+.no-result {
+text-align: center;
+font-size: 16px;
+opacity: 0.6;
+margin-top: 20px;
+}
+
+.compare-btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.compare-btn:hover {
+  background: #005fcc;
+}
+
+.compare-btn.added {
+  background: #28a745 !important; /* green */
+}
+
+.success-msg {
+  background: #d1fae5;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  color: #065f46;
+  font-weight: 500;
+}
+/* Container */
+.phones-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Title */
+.phones-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Message */
+.success-msg {
+  text-align: center;
+  color: green;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+/* Phone List */
+.phones-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Phone Item Card */
+.phone-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  padding: 18px 20px;
+  border-radius: 12px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 15px;
+  transition: 0.2s ease-in-out;
+}
+
+.phone-item:hover {
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Phone Details Section */
+.phone-name {
+  font-weight: 700;
+  font-size: 18px;
+  flex: 2;
+}
+
+.phone-brand,
+.phone-score {
+  color: #555;
+  font-size: 14px;
+  flex: 1;
+}
+
+/* Compare Button */
+.compare-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.compare-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Added Button State */
+.compare-btn.added {
+  background: #16a34a;
+}
+
+.compare-btn.added:hover {
+  background: #15803d;
+}
+
+/* No result text */
+.no-result {
+  text-align: center;
+  color: #888;
 }

@@ -7,6 +7,8 @@ import Analytics from "./components/Analytics.jsx";
 import Header from "./components/Header";
 import "./index.css"; // import the CSS we added
 import Footer from "../src/components/Footers.jsx";
+import AllPhones from "./pages/AllPhones.jsx";
+import About from './pages/About.jsx';
 
 function App() {
   const location = useLocation();
@@ -14,8 +16,10 @@ function App() {
   const links = [
     { to: "/", label: "Home" },
     { to: "/recommendations", label: "AI Recommendations" },
+    {to:"/allphones", label:"All Phones"},
     { to: "/compare", label: "Comparison" },
     { to: "/analytics", label: "Analytics" },
+    { to: "/about", label: "About" },
   ];
 
   return (
@@ -43,9 +47,11 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/allphones" element={<AllPhones />} />
           <Route path="/recommendations" element={<Recommendations />} />
           <Route path="/compare" element={<Compare />} />
           <Route path="/analytics" element={<Analytics />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
       <Footer/>
