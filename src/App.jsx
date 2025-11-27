@@ -12,7 +12,7 @@ function App() {
   const location = useLocation();
 
   const links = [
-    { to: "/", label: "Browse Phones" },
+    { to: "/", label: "Home" },
     { to: "/recommendations", label: "AI Recommendations" },
     { to: "/compare", label: "Comparison" },
     { to: "/analytics", label: "Analytics" },

@@ -7,7 +7,7 @@ function Home() {
 
   return (
     <div className="home-container">
-      <h1 className="home-title">Browse Phones</h1>
+      <h1 className="home-title">Phones</h1>
 
       <div className="phone-grid">
         {randomPhones.map((phone) => (
