@@ -51,10 +51,10 @@ function Compare() {
                     <p>Price: Rs.{phone.price}</p>
                     {/* <p>GPU: {phone.gpu}</p> */}
                     <p>CPU: {phone.processor}</p>
-                    <p>RAM: {phone.ram}</p>
-                    <p>Battery: {phone.battery}</p>
+                    <p>RAM: {phone.ram}GB</p>
+                    <p>Battery: {phone.battery}Mah</p>
                     {/* <p>Camera: {phone.camera}</p> */}
-                    <p>Storage: {phone.storage}</p>
+                    <p>Storage: {phone.storage}GB</p>
                     <p>Camera:{phone.camera}</p>
                     {/* <p>Display: {phone.display}</p> */}
                     {/* <p>Website:<a>{phone.website_url}</a></p> */}

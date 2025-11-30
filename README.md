@@ -119,6 +119,8 @@ Open the browser at http://localhost:3173
 to see the analytics dashboard.
 
 📦 Project Structure
+
+```structure
 project-root/
 │
 ├─ backend/
@@ -135,6 +137,7 @@ project-root/
 │ └─ package.json
 │
 └─ README.md
+```
 
 ⚡ Notes
 
